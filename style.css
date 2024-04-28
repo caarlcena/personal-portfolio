@@ -25,6 +25,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow-x: hidden;
   
 }
 main {
@@ -130,7 +131,7 @@ a {
 
 section {
   margin-top: 50px;
-  width: 100%;
+  width: 95%;
   padding: 5px 10px;
   display: flex;
   color: white;
@@ -138,6 +139,7 @@ section {
   align-items: center;
   gap: 30px;
   flex-direction: column;
+  overflow-x: hidden;
 }
 
 .sectionName {
