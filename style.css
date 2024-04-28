@@ -1,0 +1,827 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-image: linear-gradient(
+    to left top,
+    #021625,
+    #041421,
+    #05111d,
+    #050e18,
+    #040b14,
+    #081119,
+    #0c151d,
+    #0e1921,
+    #0c242e,
+    #063139,
+    #003d41,
+    #054a45);
+  color: white;
+}
+header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.navContainer {
+  margin-top: 10px;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+  padding: 5px 10px;
+  font-family: Inter, sans-serif;
+}
+.profile {
+  width: 80%;
+  padding: 5px 10px;
+  display: flex;
+  color: white;
+  gap: 35px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.nameIntro {
+  text-shadow: 7px 4px 4px rgba(0, 0, 0, 0.25);
+  font: 30px Inter, sans-serif;
+  color: antiquewhite;
+  
+}
+
+nav {
+  width: 50%;
+  border-radius: 40px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  /* background-color: rgba(189, 23, 147, 0.12); */
+  padding: 5px 10px;
+  display: none;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+.navBar {
+  display: flex;
+  font-size: 10px;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+  margin: 0px;
+  text-align: center;
+  padding-right: 50px;
+  
+}
+.navBar a:hover {
+  width: 100%;
+  border-radius: 3px;
+  background-image: linear-gradient(to right, rgb(56, 15, 90),rgb(82, 23, 150),rgb(137, 84, 211));
+}
+
+.picture1 {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.picture2 {
+  width: 90px;
+  height: 78px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.paragraph {
+  display: flex;
+  text-align: justify;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 20px;
+  width: 100%;
+}
+.paragraph2 {
+  display: flex;
+  text-align: justify;
+  font-size: 18px;
+  width: 98%;
+  padding-left: 20px;
+}
+.aboutMe {
+  display: flex;
+  font-family: "Arial Black", Gadget, sans-serif;
+  font-size: 24px;
+}
+
+section {
+  margin-top: 50px;
+  width: 80%;
+  padding: 5px 10px;
+  display: flex;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-direction: column;
+}
+
+.sectionName {
+  display: flex;
+}
+.aboutMe {
+  width: 100%;
+  font-family: "Arial Black", Gadget, sans-serif;
+  font-size: 25px;
+  text-align: left;
+  gap: 20px;
+  
+}
+
+.aboutSection {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.aboutMeCheck{
+  width: 100%;
+  font-family: "Arial Black", Gadget, sans-serif;
+  font-size: 18px;
+  text-align: center;
+}
+
+.works{
+  display: flex;
+  text-align: left;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+h5 a:hover{
+  background-color: rgb(154, 71, 231);
+  border-radius: 5px;
+}
+.slider-wrapper{
+  /* display: block;
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto; */
+  position: relative;
+  max-width: 28.5rem;
+  /* margin: 0 auto; */
+}
+.slider{ 
+  display: flex;
+  aspect-ratio: 16 / 9;
+  overflow-x: hidden;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+  border-radius: 20px;
+  
+}
+
+.slider img{
+  flex: 1 0 100%;
+  scroll-snap-align: start;
+  object-fit: cover;
+  
+}
+
+.slider-nav{
+  display: flex;
+  column-gap: 0.2rem;
+  position: absolute;
+  bottom: 1px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+.slider-nav a{
+  display: flex;
+  width: 10px;
+  height: 10px;
+  border-radius: 40%;
+  background-color: rgb(44, 114, 151);
+  transition: opacity ease 0.5s;
+}
+
+.slider-nav a:hover{
+  opacity: 100%;
+  background-image: linear-gradient(to right, rgb(6, 30, 65),rgb(1, 27, 39),rgb(9, 24, 71));
+}
+
+h3{
+  font-family: "Arial Black", Gadget, sans-serif;
+  font-size: 15px;
+}
+
+.myUl {
+  display: flex;
+  width: 100%;
+  font-size: 20px;
+  list-style: none;
+  flex-direction: column;
+  padding-left: 125px;
+}
+
+.resumeSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+  gap: 50px;
+  
+}
+.skillTools{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  gap: 10px;
+  margin-bottom: 50px;
+}
+.logo
+{
+  display: flex;
+  height: 45px;
+  width: 85px;
+}
+.logo2{
+  display: flex;
+  height: 55px;
+  width: 60px;
+}
+.logo3{
+  display: flex;
+  height: 50px;
+  width: 50px;
+  border-radius: 10px;
+}
+.logo4{
+  display: flex;
+  height: 50px;
+  width: 50px;
+}
+.logo5{
+  width: 60px;
+  height: 60px;
+}
+.card
+{
+  display: flex;
+  width: 90px;
+  height: 90px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  background-color: rgba(20, 82, 122, 0.12);
+  border-radius: 25px; 
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0px;
+  border: 1px solid rgb(93, 162, 226);
+  flex-direction: column;
+}
+.footerContainer{
+  width: 100%;
+  margin-top: 80px;
+  text-align: center;
+
+}
+.socialIcons{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+  
+}
+.socialIcons a{
+  text-decoration: none;
+  padding: 10px;
+  background-color: rgb(10, 47, 58);
+  margin: 0px 15px;
+  border-radius: 50%;
+}
+
+.socialIcons a i{
+  font-size: 2em;
+  color: rgb(175, 207, 219);
+  opacity: 3;
+}
+
+.socialIcons a:hover{
+  background-color: rgb(5, 5, 5);
+  transition: 0.5s;
+}
+
+.socialIcons a:hover i{
+  color: rgb(175, 207, 219);
+  transition: 0.5s;
+}
+.footerBottom{
+  margin-top: 50px;
+  background-color: rgb(12, 29, 46);
+  width: 100%;
+  border-radius: 5px;
+}
+
+.designer{
+  letter-spacing: 1px;
+  font-weight: 400;
+  margin: 0px 2px;
+  font-style: italic;
+}
+
+
+
+
+@media (min-width: 1280px) {
+  nav {
+    width: 50%;
+    border-radius: 40px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    background-color: rgba(189, 23, 147, 0.12);
+    padding: 5px 10px;
+    display: block;
+  }
+  .navContainer {
+    margin-top: 10px;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+    padding: 5px 10px;
+    font-family: Inter, sans-serif;
+  }
+  .navBar {
+    display: flex;
+    font-size: 20px;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    margin: 0px;
+    text-align: center;
+    padding: 7px 0px;
+  }
+
+  .nameIntro {
+    text-shadow: 7px 4px 4px rgba(0, 0, 0, 0.25);
+    font: 22px Inter, sans-serif;
+    color: antiquewhite;
+  }
+  .picture1 {
+    width: 360px;
+    height: 353px;
+    border-radius: 50%;
+    object-fit: cover;
+    padding: 20px;
+    display: flex;
+  }
+  .picture2 {
+    width: 100px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  section {
+    width: 80%;
+    padding: 5px 10px;
+    margin-top: 150px;
+    display: flex;
+    color: white;
+    gap: 35px;
+    flex-direction: column;
+  }
+
+  .profile {
+    width: 80%;
+    padding: 5px 10px;
+    display: flex;
+    color: white;
+    gap: 35px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sectionName {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-size: 25px;
+  }
+
+  .paragraph {
+    display: flex;
+    text-align: justify;
+    width: 550px;
+    font-size: 18px;
+    padding: 5px 5px;
+  }
+  .paragraph2 {
+    display: flex;
+    text-align: justify;
+    font-size: 18px;
+    width: 98%;
+    padding-left: 20px;
+  }
+
+  .aboutMe {
+    width: 100%;
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-size: 25px;
+    text-align: left;
+    gap: 20px;
+    
+  }
+
+  .aboutSection {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .aboutMeCheck{
+    width: 100%;
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .works{
+    display: flex;
+    text-align: left;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  h5 a:hover{
+    background-color: rgb(154, 71, 231);
+    border-radius: 5px;
+  }
+  .slider-wrapper{
+    /* display: block;
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto; */
+    position: relative;
+    max-width: 60rem;
+    margin: 0 auto;
+  }
+  .slider-nav{
+    display: flex;
+    column-gap: 0.2rem;
+    position: absolute;
+    bottom: 4px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+  }
+  .slider-nav a{
+    display: flex;
+    width: 20px;
+    height: 20px;
+    border-radius: 40%;
+    background-color: rgb(21, 91, 131);
+    opacity: 0.75;
+    transition: opacity ease 0.5s;
+  }
+
+  h3{
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-size: 15px;
+  }
+
+  ul {
+    width: 100%;
+    font-size: 20px;
+  }
+
+  .myUl {
+    width: 100%;
+    font-size: 20px;
+    list-style: square;
+    text-align: left;
+    
+  }
+  
+
+  .resumeSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    gap: 50px;
+  }
+  
+  .skillTools{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content:space-around;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  .skillsMain{
+    display: flex;
+    flex-direction: row; 
+    gap: 10px;
+  }
+
+  .logo
+  {
+    height: 90px;
+    width: 195px;
+  }
+  .logo2{
+    width: 140px;
+    height: 110px;
+  }
+  .logo3{
+    width: 95px;
+    height: 90px;
+    border-radius: 20px;
+  }
+  .logo4{
+    width: 100px;
+    height: 100px;
+  }
+  .logo5{
+    width: 60px;
+    height: 60px;
+  }
+  .card
+  {
+    display: flex;
+    width: 190px;
+    height: 150px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    background-color: rgba(20, 82, 122, 0.12);
+    border-radius: 40px; 
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px;
+    border: 1px solid rgb(93, 162, 226);
+    flex-direction: column;
+    
+  }
+
+}
+
+@media (min-width: 1536px) {
+  nav {
+    width: 50%;
+    border-radius: 40px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    background-color: rgba(189, 23, 147, 0.12);
+    padding: 5px 10px;
+    display: block;
+  }
+  .navContainer {
+    margin-top: 10px;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+    padding: 5px 10px;
+    font-family: Inter, sans-serif;
+  }
+  .navBar {
+    display: flex;
+    font-size: 20px;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    margin: 0px;
+    text-align: center;
+    padding: 7px 0px;
+  }
+
+  .nameIntro {
+    text-shadow: 7px 4px 4px rgba(0, 0, 0, 0.25);
+    font: 22px Inter, sans-serif;
+    color: antiquewhite;
+  }
+  .picture1 {
+    width: 360px;
+    height: 353px;
+    border-radius: 50%;
+    object-fit: cover;
+    padding: 20px;
+    display: flex;
+  }
+  .picture2 {
+    width: 100px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  section {
+    width: 80%;
+    padding: 5px 10px;
+    margin-top: 150px;
+    display: flex;
+    color: white;
+    gap: 35px;
+    flex-direction: column;
+  }
+
+  .profile {
+    width: 80%;
+    padding: 5px 10px;
+    display: flex;
+    color: white;
+    gap: 35px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sectionName {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-size: 25px;
+  }
+
+  .paragraph {
+    display: flex;
+    text-align: justify;
+    width: 550px;
+    font-size: 18px;
+    padding: 5px 5px;
+  }
+  .paragraph2 {
+    display: flex;
+    text-align: justify;
+    font-size: 18px;
+    width: 98%;
+    padding-left: 20px;
+  }
+
+  .aboutMe {
+    width: 100%;
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-size: 25px;
+    text-align: left;
+    gap: 20px;
+    
+  }
+
+  .aboutSection {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .aboutMeCheck{
+    width: 100%;
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .works{
+    display: flex;
+    text-align: left;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  h5 a:hover{
+    background-color: rgb(154, 71, 231);
+    border-radius: 5px;
+  }
+  .slider-wrapper{
+    /* display: block;
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto; */
+    position: relative;
+    max-width: 90rem;
+    margin: 0 auto;
+  }
+  .slider-nav{
+    display: flex;
+    column-gap: 0.2rem;
+    position: absolute;
+    bottom: 6px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+  }
+  .slider-nav a{
+    display: flex;
+    width: 30px;
+    height: 30px;
+    border-radius: 40%;
+    background-color: rgb(21, 91, 131);
+    opacity: 0.75;
+    transition: opacity ease 0.5s;
+  }
+
+  h3{
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-size: 15px;
+  }
+
+  ul {
+    width: 100%;
+    font-size: 20px;
+  }
+
+  .myUl {
+    width: 100%;
+    font-size: 20px;
+    list-style: square;
+    text-align: left;
+    
+  }
+  
+
+  .resumeSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    gap: 50px;
+  }
+  
+  .skillTools{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content:space-around;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: nowrap;
+  }
+  .skillsMain{
+    display: flex;
+    flex-direction: row; 
+    gap: 10px;
+  }
+
+  .logo
+  {
+    height: 90px;
+    width: 195px;
+  }
+  .logo2{
+    width: 140px;
+    height: 110px;
+  }
+  .logo3{
+    width: 95px;
+    height: 90px;
+    border-radius: 20px;
+  }
+  .logo4{
+    width: 100px;
+    height: 100px;
+  }
+  .logo5{
+    width: 60px;
+    height: 60px;
+  }
+  .card
+  {
+    display: flex;
+    width: 190px;
+    height: 150px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    background-color: rgba(20, 82, 122, 0.12);
+    border-radius: 40px; 
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px;
+    border: 1px solid rgb(93, 162, 226);
+    flex-direction: column;
+    
+  }
+
+}
