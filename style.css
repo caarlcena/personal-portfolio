@@ -17,6 +17,8 @@ body {
     #003d41,
     #054a45);
   color: white;
+  /* position: relative; */
+  overflow-x: hidden;
 }
 header {
   width: 100%;
@@ -91,8 +93,8 @@ a {
 }
 
 .picture1 {
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
   object-fit: cover;
 }
@@ -182,7 +184,7 @@ h5 a:hover{
   margin-left: auto;
   margin-right: auto; */
   position: relative;
-  max-width: 28.5rem;
+  max-width: 100%
   /* margin: 0 auto; */
 }
 .slider{ 
